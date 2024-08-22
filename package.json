@@ -1,0 +1,19 @@
+{
+  "name": "unizen-trade-aggregator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.22.9",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/contracts-upgradeable": "^4.4.1",
+    "@openzeppelin/hardhat-defender": "^1.5.0",
+    "@openzeppelin/hardhat-upgrades": "^1.20.0",
+    "dotenv": "^8.2.0"
+  }
+}
