@@ -3,17 +3,8 @@ import '@nomiclabs/hardhat-etherscan';
 import '@nomiclabs/hardhat-solhint';
 import '@nomicfoundation/hardhat-chai-matchers';
 import '@openzeppelin/hardhat-upgrades';
-import '@typechain/ethers-v5';
 import { config as dotenvConfig } from 'dotenv';
-import 'hardhat-change-network';
-import 'hardhat-deploy';
-import 'hardhat-gas-reporter';
-import 'hardhat-typechain';
 import { resolve } from 'path';
-import 'solidity-coverage';
-import 'hardhat-contract-sizer';
-require('hardhat-abi-exporter');
-require('hardhat-contract-sizer');
 
 dotenvConfig({ path: resolve(__dirname, './.env') });
 const CHAIN_IDS = {

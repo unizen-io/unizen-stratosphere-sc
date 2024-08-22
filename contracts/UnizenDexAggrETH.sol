@@ -11,9 +11,6 @@ import {EthReceiver} from "./helpers/EthReceiver.sol";
 import {IUnizenDexAggr} from "./interfaces/IUnizenDexAggr.sol";
 import {IStargateRouter} from "./interfaces/IStargateRouter.sol";
 import {IStargateReceiver} from "./interfaces/IStargateReceiver.sol";
-import {ILayerZeroReceiver} from "./interfaces/ILayerZeroReceiver.sol";
-import {ILayerZeroEndpoint} from "./interfaces/ILayerZeroEndpoint.sol";
-import {ILayerZeroUserApplicationConfig} from "./interfaces/ILayerZeroUserApplicationConfig.sol";
 import {ITcRouter} from "./interfaces/ITcRouter.sol";
 
 contract UnizenDexAggrETH is IUnizenDexAggr, Controller, EthReceiver, ReentrancyGuardUpgradeable, IStargateReceiver {
