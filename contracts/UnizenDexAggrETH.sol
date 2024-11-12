@@ -143,6 +143,7 @@ contract UnizenDexAggrETH is IUnizenDexAggr, Controller, EthReceiver, Reentrancy
                     0,
                     calls[i].data
                 );
+                srcToken.safeApprove(calls[i].targetExchange, 0);
             }
             // Here we have to check the tempAmount we got from the trade is higher than sell amount of next, else that mean we got steal fund
             // But if there is split trade with split source token into multi routes, we dont check because first trade of route is trade from source token
@@ -287,10 +288,10 @@ contract UnizenDexAggrETH is IUnizenDexAggr, Controller, EthReceiver, Reentrancy
         }
         // _swap(_token, amountLD, calls, true);
         // Use _nocne to calculate the diff amount of stable _token left from that trade and send it to user, prevent stack too deep
-        _nonce = IERC20(_token).balanceOf(address(this)) + amountLD - contractStatus.balanceSrcBefore;
-        if (_nonce > 0) {
-            IERC20(_token).safeTransfer(user, _nonce);
-        }
+        // _nonce = IERC20(_token).balanceOf(address(this)) + amountLD - contractStatus.balanceSrcBefore;
+        // if (_nonce > 0) {
+        //     IERC20(_token).safeTransfer(user, _nonce);
+        // }
 
         if (dstToken == address(0)) {
             // trade to ETH
