@@ -42,24 +42,23 @@ const config = {
       url: 'https://bsc-dataseed.binance.org/',
       chainId: CHAIN_IDS.bsc,
       // timeout: 8000000,
-      accounts: [PRIVK],
     },
     bscTest: {
       url: 'https://data-seed-prebsc-1-s2.bnbchain.org:8545',
       chainId: 97,
       timeout: 1000000000,
-      accounts: [PRIVK],
+      
     },
     matic: {
       url: process.env.MATIC_RPC || '',
       chainId: CHAIN_IDS.matic,
       timeout: 8000000,
-      accounts: [PRIVK],
+      
     },
     avax: {
       url: `https://avalanche-c-chain-rpc.publicnode.com`,
       chainId: CHAIN_IDS.avax,
-      accounts: [PRIVK],
+      
       throwOnTransactionFailures: true,
       throwOnCallFailures: true,
       allowUnlimitedContractSize: true,
@@ -68,7 +67,7 @@ const config = {
     fantom: {
       url: `https://rpc.ankr.com/fantom/`,
       chainId: CHAIN_IDS.fantom,
-      accounts: [PRIVK],
+      
       gas: 3000000,
       throwOnTransactionFailures: true,
       throwOnCallFailures: true,
@@ -78,18 +77,18 @@ const config = {
     arbitrum: {
       url: `https://arb1.arbitrum.io/rpc`,
       chainId: CHAIN_IDS.arbitrum,
-      accounts: [PRIVK],
+      
       gasPrice: 100000000,
     },
     optimism: {
       url: 'https://optimism.blockpi.network/v1/rpc/public',
       chainId: CHAIN_IDS.optimism,
-      accounts: [PRIVK],
+      
     },
     base: {
       url: 'https://mainnet.base.org',
       chainId: CHAIN_IDS.base,
-      accounts: [PRIVK],
+      
     },
   },
   solidity: {

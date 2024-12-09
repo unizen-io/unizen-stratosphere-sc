@@ -1,0 +1,3 @@
+[submodule "lib/permit2"]
+	path = lib/permit2
+	url = https://github.com/Uniswap/permit2
